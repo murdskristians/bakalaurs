@@ -11,7 +11,7 @@
                     <div class="array-size">{{ arraySize }}</div>
                 </div>
 
-                <div class="range-input">
+                <div>
                     <p>Sorting Speed</p>
                     <select @input="speedFactorChanged" :disabled="inProgress">
                         <option v-for="option in speedOptions"
@@ -62,7 +62,9 @@
             disableMenu(){
                 if(this.inProgress){
                     return {cursor: 'not-allowed'}
-                }
+                } 
+                else
+                return {cursor: 'allowed'}
             }
         }
     }
