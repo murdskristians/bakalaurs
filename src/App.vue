@@ -27,7 +27,7 @@
 }
 
 .array-bar {
-	background-color: rgb(65, 204, 204);
+	background-color: rgb(93, 206, 206);
 }
 
 .menu{

@@ -26,7 +26,7 @@
     import {heapSort} from './../algorithms/heapSort';
     import {selectionSort} from './../algorithms/selectionSort';
 
-    const MAIN_COLOR = 'rgb(65, 204, 204)';
+    const MAIN_COLOR = 'rgb(93, 206, 206)';
     const CHECK_COLOR = '#FFCA3A';
     const SWAP_COLOR = '#FF595E';
     const SORTED_COLOR = '#4CA97F';
