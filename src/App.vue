@@ -1,32 +1,69 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div>
+		<sorting-visualizer></sorting-visualizer>
+	</div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+	import SortingVisualizer from './components/SortingVisualizer'
+
+	export default {
+		components: {
+			SortingVisualizer
+		}
+	}
+</script>
+<style>
+.tool {
+	background-color: #EBFFF3;
+	display: flex;
+}
+.array-container {
+	margin-left: 2vw;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	justify-content: center;
 }
 
-#nav {
-  padding: 30px;
+.array-bar {
+	background-color: rgb(65, 204, 204);
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: #DBD4D3;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.sub-menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.sub-menu div{
+	color: #1E2019;
+	text-align: center;
+	padding: 16px 16px;
+}
+
+.sub-menu div:hover,  sub-menu div:active{
+	background-color: #757780;
+}
+
+/* .range-input{
+} */
+
+.range-input p{
+	display: inline;
+}
+
+.sub-menu .array-size{
+	display: inline-block;
+	padding: 0;
+	min-width: 60px;
 }
 </style>
