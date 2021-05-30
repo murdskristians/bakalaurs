@@ -27,7 +27,7 @@
 	align-items: flex-end;
 	flex-direction: row;
 	justify-content: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .array-bar {
