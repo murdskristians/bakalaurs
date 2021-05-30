@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="menu" :style="disableMenu">
+    <div class="menu-frame">
+        <div  class="menu" :style="disableMenu">
             <div class="sub-menu">
                 <div @click="resetArray" class="menu-left">Reset Array</div>
             </div>

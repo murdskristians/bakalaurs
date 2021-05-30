@@ -17,23 +17,27 @@
 .tool {
 	background-color: #EBFFF3;
 	display: flex;
+	font-weight: 650;
+	line-height: normal;
+	height: 100vh;
 }
 .array-container {
-	margin-left: 2vw;
+	margin-left: 0.5vw;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: row;
 	justify-content: center;
+	overflow: auto;
 }
 
 .array-bar {
 	background-color: rgb(93, 206, 206);
 }
 
-.menu{
+.menu-frame{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	overflow: hidden;
 	background-color: #DBD4D3;
 }
@@ -54,15 +58,16 @@
 	background-color: #757780;
 }
 
-/* .range-input{
-} */
+.range-input{
+	display: block;
+}
 
 .range-input p{
-	display: inline;
+	display: block;
 }
 
 .sub-menu .array-size{
-	display: inline-block;
+	display: block;
 	padding: 0;
 	min-width: 60px;
 }

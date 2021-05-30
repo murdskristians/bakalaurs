@@ -152,7 +152,7 @@
                 this.resetColors();
                 this.array = [];
                 for(let i = 0; i < this.arraySize; i++){
-                    this.array.push(this.getRandomNumberInRange(10, 999))
+                    this.array.push(this.getRandomNumberInRange(10, 800))
                 }
             },
 
